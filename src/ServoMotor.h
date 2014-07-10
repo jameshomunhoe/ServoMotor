@@ -1,6 +1,7 @@
 #ifndef ServoMotor_H
 #define ServoMotor_H
 
-int pulseWaveGenerator(int angle);
+void servoMotor(int angle);
+int pulseWaveGenerator(int,clockStart, int angle);
 
 #endif // ServoMotor_H

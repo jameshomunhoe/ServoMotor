@@ -3,10 +3,24 @@
 #include "clock.h"
 
 
-int pulseWaveGenerator(int angle){
+
+void servoMotor(int angle){
+
+	int clockStart;
+	int returnValue;
 	
-	int clockStart = getCurrentClock();
+	while(1){
+		clockStart = getCurrentClock();
+		//while(returnValue != 2)}{
+			returnValue = pulseWaveGenerator(clockStart,angle);
+		//}
+	}
 	
+
+}
+int pulseWaveGenerator(int clockStart,int angle){
+	
+
 		while( (getCurrentClock() - clockStart) <= angle)
 			return 1;
 		
